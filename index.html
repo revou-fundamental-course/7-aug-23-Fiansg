@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Coder" content="Alfian">
+    <link rel="stylesheet" href="css/style.css"
+</head>
+
+<body>
+    <div class="pembuka">
+        <h1>Welcome to Katik</h1>
+        <pre>
+Selamat datang di Katik
+Sebuah web apps sederhana untuk menghitung nilai luas dan keliling segitiga
+        </pre>
+    </div>
+    <div class="Segitiga">
+        <h1 id="JudulSegitiga">Segitiga</h1>
+        <img src="http://belajarmatematikaonline.com/wp-content/uploads/2014/08/Rumus-Untuk-Mencari-Luas-Dan-Keliling-Segtiga-300x300.png" alt="Segitiga">
+        <p1>Keterangan :</p1>
+        <pre>
+a = Sisi 1 (Alas) Segitiga
+b = Sisi 2 Segitiga
+c = Sisi 3 Segitiga
+t = Tinggi Segitiga
+</pre>
+        <hr />
+        <h1 id="JudulLuasSegitiga">Hitung Luas Segitiga</h1>
+        <p1>Luas = (a/2)*t</p1>
+        <p></p>
+        <form class="luas">
+            <label for="alas">Alas</label>
+            <div class="alas">
+                <input type="number" id="alas">
+            </div>
+            <label for="tinggi">Tinggi</label>
+            <div class="tinggi">
+                <input type="number" id="tinggi">
+            </div>
+        </form>
+        <input type="button" onClick="luas()" Value="Hitung" />
+        <p>Luas = <span id="luas"></span></p>
+        <hr />
+        <h1 id="JudulKelilingSegitiga">Hitung Keliling Segitiga</h1>
+        <p1>Keliling = a + b + c</p1>
+        <p></p>
+        <form class="keliling">
+            <label for="">Sisi a</label>
+            <div class="a">
+                <input type="number" id="a">
+            </div>
+            <label for="">Sisi b</label>
+            <div class="b">
+                <input type="number" id="b">
+            </div>
+            <label for="">Sisi c</label>
+            <div class="c">
+                <input type="number" id="c">
+            </div>
+        </form>
+        <input type="button" onClick="keliling()" Value="Hitung" />
+        <p>Keliling = <span id="keliling"></span></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
